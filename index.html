@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dan's App Tool</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <h1><img src="images/YouAppi.jpg" height="80" width="100">Search Apps on App Stores <img src="images/YouAppi.jpg" height="80" width="100"></h1>
+    <br>
+    <div class="container col-sm-offset-3 col-sm-6">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/Gplay.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Google Play
+            </a>
+
+            <div class="input-group mb-3">
+                <input type="search" class="form-control" placeholder="Android BundleID" id="GplayBox" aria-label="Search"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="googleSub">Search</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container col-sm-offset-3 col-sm-6">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/iTuens.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                iOS
+            </a>
+
+            <div class="input-group mb-3">
+                <input type="search" id="itunesBox" class="form-control" placeholder="iOS BundleID" aria-label="Search"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="iosSub" type="button">Search</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <center><button class="btn btn-primary" id="export">Export to CSV</button> <button class="btn btn-success"><a href="https://offcornerdev.com/bundleid.html" target="_blank">GO to Bundle Id Finder</a></button></center>
+    <br>
+    <div class="container col-sm-offset-3 col-sm-6">
+        <table  class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Bundle ID</th>
+                <th>URL</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+
+        </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>
